@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D302B2F615ED348600E2133D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D302B2F515ED348600E2133D /* UIKit.framework */; };
+		D302B2F815ED348600E2133D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D302B2F715ED348600E2133D /* Foundation.framework */; };
+		D302B2FA15ED348600E2133D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D302B2F915ED348600E2133D /* CoreGraphics.framework */; };
+		D302B30015ED348600E2133D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D302B2FE15ED348600E2133D /* InfoPlist.strings */; };
+		D302B30215ED348600E2133D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D302B30115ED348600E2133D /* main.m */; };
+		D302B30615ED348600E2133D /* GigyaExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D302B30515ED348600E2133D /* GigyaExampleAppDelegate.m */; };
+		D302B30915ED348600E2133D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D302B30715ED348600E2133D /* MainStoryboard.storyboard */; };
+		D302B30F15ED348600E2133D /* GigyaExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D302B30E15ED348600E2133D /* GigyaExampleViewController.m */; };
+		D302B31715ED348600E2133D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D302B31615ED348600E2133D /* SenTestingKit.framework */; };
+		D302B31815ED348700E2133D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D302B2F515ED348600E2133D /* UIKit.framework */; };
+		D302B31915ED348700E2133D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D302B2F715ED348600E2133D /* Foundation.framework */; };
+		D302B32115ED348700E2133D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D302B31F15ED348700E2133D /* InfoPlist.strings */; };
+		D302B32415ED348700E2133D /* GigyaExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D302B32315ED348700E2133D /* GigyaExampleTests.m */; };
+		D3830D6B15ED606C00E448E3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3830D6A15ED606C00E448E3 /* Accounts.framework */; };
+		D3830D6C15ED609800E448E3 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3830D6715ED605700E448E3 /* Twitter.framework */; };
+		D3E25A7D166D39F500490FFB /* GSAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A52166D39F500490FFB /* GSAPI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A7E166D39F500490FFB /* GSAPI_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A54166D39F500490FFB /* GSAPI_Internal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A7F166D39F500490FFB /* GSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A56166D39F500490FFB /* GSContext.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A80166D39F500490FFB /* GSFacebook.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A59166D39F500490FFB /* GSFacebook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A81166D39F500490FFB /* GSFBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3E25A5B166D39F500490FFB /* GSFBDialog.bundle */; };
+		D3E25A82166D39F500490FFB /* GSFBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A5D166D39F500490FFB /* GSFBDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A83166D39F500490FFB /* GSFBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A5F166D39F500490FFB /* GSFBLoginDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A84166D39F500490FFB /* GSFBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A61166D39F500490FFB /* GSFBRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A85166D39F500490FFB /* GSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A63166D39F500490FFB /* GSLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A86166D39F500490FFB /* GSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A65166D39F500490FFB /* GSObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A87166D39F500490FFB /* GSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A67166D39F500490FFB /* GSRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A88166D39F500490FFB /* GSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A69166D39F500490FFB /* GSResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A89166D39F500490FFB /* GSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A6B166D39F500490FFB /* GSSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A8A166D39F500490FFB /* GSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A6D166D39F500490FFB /* GSWebViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A8B166D39F500490FFB /* GSWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E25A6E166D39F500490FFB /* GSWebViewController.xib */; };
+		D3E25A8C166D39F500490FFB /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A72166D39F500490FFB /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A8D166D39F500490FFB /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A74166D39F500490FFB /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A8E166D39F500490FFB /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A76166D39F500490FFB /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A8F166D39F500490FFB /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A78166D39F500490FFB /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A90166D39F500490FFB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A7A166D39F500490FFB /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3E25A91166D39F500490FFB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E25A7C166D39F500490FFB /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D302B31A15ED348700E2133D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D302B2E815ED348600E2133D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D302B2F015ED348600E2133D;
+			remoteInfo = GigyaExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D302B2F115ED348600E2133D /* GigyaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GigyaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D302B2F515ED348600E2133D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D302B2F715ED348600E2133D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D302B2F915ED348600E2133D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D302B2FD15ED348600E2133D /* GigyaExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GigyaExample-Info.plist"; sourceTree = "<group>"; };
+		D302B2FF15ED348600E2133D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D302B30115ED348600E2133D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D302B30315ED348600E2133D /* GigyaExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GigyaExample-Prefix.pch"; sourceTree = "<group>"; };
+		D302B30415ED348600E2133D /* GigyaExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GigyaExampleAppDelegate.h; sourceTree = "<group>"; };
+		D302B30515ED348600E2133D /* GigyaExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GigyaExampleAppDelegate.m; sourceTree = "<group>"; };
+		D302B30815ED348600E2133D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D302B30D15ED348600E2133D /* GigyaExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GigyaExampleViewController.h; sourceTree = "<group>"; };
+		D302B30E15ED348600E2133D /* GigyaExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GigyaExampleViewController.m; sourceTree = "<group>"; };
+		D302B31515ED348600E2133D /* GigyaExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigyaExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D302B31615ED348600E2133D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D302B31E15ED348700E2133D /* GigyaExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GigyaExampleTests-Info.plist"; sourceTree = "<group>"; };
+		D302B32015ED348700E2133D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D302B32215ED348700E2133D /* GigyaExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GigyaExampleTests.h; sourceTree = "<group>"; };
+		D302B32315ED348700E2133D /* GigyaExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GigyaExampleTests.m; sourceTree = "<group>"; };
+		D3830D6715ED605700E448E3 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		D3830D6A15ED606C00E448E3 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		D3E25A51166D39F500490FFB /* GSAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAPI.h; sourceTree = "<group>"; };
+		D3E25A52166D39F500490FFB /* GSAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAPI.m; sourceTree = "<group>"; };
+		D3E25A53166D39F500490FFB /* GSAPI_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAPI_Internal.h; sourceTree = "<group>"; };
+		D3E25A54166D39F500490FFB /* GSAPI_Internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAPI_Internal.m; sourceTree = "<group>"; };
+		D3E25A55166D39F500490FFB /* GSContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSContext.h; sourceTree = "<group>"; };
+		D3E25A56166D39F500490FFB /* GSContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSContext.m; sourceTree = "<group>"; };
+		D3E25A58166D39F500490FFB /* GSFacebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSFacebook.h; sourceTree = "<group>"; };
+		D3E25A59166D39F500490FFB /* GSFacebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSFacebook.m; sourceTree = "<group>"; };
+		D3E25A5A166D39F500490FFB /* GSFBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSFBConnect.h; sourceTree = "<group>"; };
+		D3E25A5B166D39F500490FFB /* GSFBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GSFBDialog.bundle; sourceTree = "<group>"; };
+		D3E25A5C166D39F500490FFB /* GSFBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSFBDialog.h; sourceTree = "<group>"; };
+		D3E25A5D166D39F500490FFB /* GSFBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSFBDialog.m; sourceTree = "<group>"; };
+		D3E25A5E166D39F500490FFB /* GSFBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSFBLoginDialog.h; sourceTree = "<group>"; };
+		D3E25A5F166D39F500490FFB /* GSFBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSFBLoginDialog.m; sourceTree = "<group>"; };
+		D3E25A60166D39F500490FFB /* GSFBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSFBRequest.h; sourceTree = "<group>"; };
+		D3E25A61166D39F500490FFB /* GSFBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSFBRequest.m; sourceTree = "<group>"; };
+		D3E25A62166D39F500490FFB /* GSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLogger.h; sourceTree = "<group>"; };
+		D3E25A63166D39F500490FFB /* GSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLogger.m; sourceTree = "<group>"; };
+		D3E25A64166D39F500490FFB /* GSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSObject.h; sourceTree = "<group>"; };
+		D3E25A65166D39F500490FFB /* GSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSObject.m; sourceTree = "<group>"; };
+		D3E25A66166D39F500490FFB /* GSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRequest.h; sourceTree = "<group>"; };
+		D3E25A67166D39F500490FFB /* GSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRequest.m; sourceTree = "<group>"; };
+		D3E25A68166D39F500490FFB /* GSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSResponse.h; sourceTree = "<group>"; };
+		D3E25A69166D39F500490FFB /* GSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSResponse.m; sourceTree = "<group>"; };
+		D3E25A6A166D39F500490FFB /* GSSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSession.h; sourceTree = "<group>"; };
+		D3E25A6B166D39F500490FFB /* GSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSession.m; sourceTree = "<group>"; };
+		D3E25A6C166D39F500490FFB /* GSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWebViewController.h; sourceTree = "<group>"; };
+		D3E25A6D166D39F500490FFB /* GSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWebViewController.m; sourceTree = "<group>"; };
+		D3E25A6E166D39F500490FFB /* GSWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSWebViewController.xib; sourceTree = "<group>"; };
+		D3E25A70166D39F500490FFB /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		D3E25A71166D39F500490FFB /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		D3E25A72166D39F500490FFB /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		D3E25A73166D39F500490FFB /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		D3E25A74166D39F500490FFB /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		D3E25A75166D39F500490FFB /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		D3E25A76166D39F500490FFB /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		D3E25A77166D39F500490FFB /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		D3E25A78166D39F500490FFB /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		D3E25A79166D39F500490FFB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		D3E25A7A166D39F500490FFB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		D3E25A7B166D39F500490FFB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		D3E25A7C166D39F500490FFB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D302B2EE15ED348600E2133D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3830D6C15ED609800E448E3 /* Twitter.framework in Frameworks */,
+				D3830D6B15ED606C00E448E3 /* Accounts.framework in Frameworks */,
+				D302B2F615ED348600E2133D /* UIKit.framework in Frameworks */,
+				D302B2F815ED348600E2133D /* Foundation.framework in Frameworks */,
+				D302B2FA15ED348600E2133D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D302B31115ED348600E2133D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D302B31715ED348600E2133D /* SenTestingKit.framework in Frameworks */,
+				D302B31815ED348700E2133D /* UIKit.framework in Frameworks */,
+				D302B31915ED348700E2133D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D302B2E615ED348600E2133D = {
+			isa = PBXGroup;
+			children = (
+				D3E25A50166D39F500490FFB /* GSSDK_2.15.6.iOS */,
+				D3830D6A15ED606C00E448E3 /* Accounts.framework */,
+				D3830D6715ED605700E448E3 /* Twitter.framework */,
+				D302B2FB15ED348600E2133D /* GigyaExample */,
+				D302B31C15ED348700E2133D /* GigyaExampleTests */,
+				D302B2F415ED348600E2133D /* Frameworks */,
+				D302B2F215ED348600E2133D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D302B2F215ED348600E2133D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D302B2F115ED348600E2133D /* GigyaExample.app */,
+				D302B31515ED348600E2133D /* GigyaExampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D302B2F415ED348600E2133D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D302B2F515ED348600E2133D /* UIKit.framework */,
+				D302B2F715ED348600E2133D /* Foundation.framework */,
+				D302B2F915ED348600E2133D /* CoreGraphics.framework */,
+				D302B31615ED348600E2133D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D302B2FB15ED348600E2133D /* GigyaExample */ = {
+			isa = PBXGroup;
+			children = (
+				D302B30415ED348600E2133D /* GigyaExampleAppDelegate.h */,
+				D302B30515ED348600E2133D /* GigyaExampleAppDelegate.m */,
+				D302B30715ED348600E2133D /* MainStoryboard.storyboard */,
+				D302B30D15ED348600E2133D /* GigyaExampleViewController.h */,
+				D302B30E15ED348600E2133D /* GigyaExampleViewController.m */,
+				D302B2FC15ED348600E2133D /* Supporting Files */,
+			);
+			path = GigyaExample;
+			sourceTree = "<group>";
+		};
+		D302B2FC15ED348600E2133D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D302B2FD15ED348600E2133D /* GigyaExample-Info.plist */,
+				D302B2FE15ED348600E2133D /* InfoPlist.strings */,
+				D302B30115ED348600E2133D /* main.m */,
+				D302B30315ED348600E2133D /* GigyaExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D302B31C15ED348700E2133D /* GigyaExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D302B32215ED348700E2133D /* GigyaExampleTests.h */,
+				D302B32315ED348700E2133D /* GigyaExampleTests.m */,
+				D302B31D15ED348700E2133D /* Supporting Files */,
+			);
+			path = GigyaExampleTests;
+			sourceTree = "<group>";
+		};
+		D302B31D15ED348700E2133D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D302B31E15ED348700E2133D /* GigyaExampleTests-Info.plist */,
+				D302B31F15ED348700E2133D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3E25A50166D39F500490FFB /* GSSDK_2.15.6.iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D3E25A51166D39F500490FFB /* GSAPI.h */,
+				D3E25A52166D39F500490FFB /* GSAPI.m */,
+				D3E25A53166D39F500490FFB /* GSAPI_Internal.h */,
+				D3E25A54166D39F500490FFB /* GSAPI_Internal.m */,
+				D3E25A55166D39F500490FFB /* GSContext.h */,
+				D3E25A56166D39F500490FFB /* GSContext.m */,
+				D3E25A57166D39F500490FFB /* GSFBConnect */,
+				D3E25A62166D39F500490FFB /* GSLogger.h */,
+				D3E25A63166D39F500490FFB /* GSLogger.m */,
+				D3E25A64166D39F500490FFB /* GSObject.h */,
+				D3E25A65166D39F500490FFB /* GSObject.m */,
+				D3E25A66166D39F500490FFB /* GSRequest.h */,
+				D3E25A67166D39F500490FFB /* GSRequest.m */,
+				D3E25A68166D39F500490FFB /* GSResponse.h */,
+				D3E25A69166D39F500490FFB /* GSResponse.m */,
+				D3E25A6A166D39F500490FFB /* GSSession.h */,
+				D3E25A6B166D39F500490FFB /* GSSession.m */,
+				D3E25A6C166D39F500490FFB /* GSWebViewController.h */,
+				D3E25A6D166D39F500490FFB /* GSWebViewController.m */,
+				D3E25A6E166D39F500490FFB /* GSWebViewController.xib */,
+				D3E25A6F166D39F500490FFB /* JSON */,
+			);
+			path = GSSDK_2.15.6.iOS;
+			sourceTree = "<group>";
+		};
+		D3E25A57166D39F500490FFB /* GSFBConnect */ = {
+			isa = PBXGroup;
+			children = (
+				D3E25A58166D39F500490FFB /* GSFacebook.h */,
+				D3E25A59166D39F500490FFB /* GSFacebook.m */,
+				D3E25A5A166D39F500490FFB /* GSFBConnect.h */,
+				D3E25A5B166D39F500490FFB /* GSFBDialog.bundle */,
+				D3E25A5C166D39F500490FFB /* GSFBDialog.h */,
+				D3E25A5D166D39F500490FFB /* GSFBDialog.m */,
+				D3E25A5E166D39F500490FFB /* GSFBLoginDialog.h */,
+				D3E25A5F166D39F500490FFB /* GSFBLoginDialog.m */,
+				D3E25A60166D39F500490FFB /* GSFBRequest.h */,
+				D3E25A61166D39F500490FFB /* GSFBRequest.m */,
+			);
+			path = GSFBConnect;
+			sourceTree = "<group>";
+		};
+		D3E25A6F166D39F500490FFB /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				D3E25A70166D39F500490FFB /* JSON.h */,
+				D3E25A71166D39F500490FFB /* NSObject+SBJSON.h */,
+				D3E25A72166D39F500490FFB /* NSObject+SBJSON.m */,
+				D3E25A73166D39F500490FFB /* NSString+SBJSON.h */,
+				D3E25A74166D39F500490FFB /* NSString+SBJSON.m */,
+				D3E25A75166D39F500490FFB /* SBJSON.h */,
+				D3E25A76166D39F500490FFB /* SBJSON.m */,
+				D3E25A77166D39F500490FFB /* SBJsonBase.h */,
+				D3E25A78166D39F500490FFB /* SBJsonBase.m */,
+				D3E25A79166D39F500490FFB /* SBJsonParser.h */,
+				D3E25A7A166D39F500490FFB /* SBJsonParser.m */,
+				D3E25A7B166D39F500490FFB /* SBJsonWriter.h */,
+				D3E25A7C166D39F500490FFB /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D302B2F015ED348600E2133D /* GigyaExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D302B32715ED348700E2133D /* Build configuration list for PBXNativeTarget "GigyaExample" */;
+			buildPhases = (
+				D302B2ED15ED348600E2133D /* Sources */,
+				D302B2EE15ED348600E2133D /* Frameworks */,
+				D302B2EF15ED348600E2133D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GigyaExample;
+			productName = GigyaExample;
+			productReference = D302B2F115ED348600E2133D /* GigyaExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D302B31415ED348600E2133D /* GigyaExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D302B32A15ED348700E2133D /* Build configuration list for PBXNativeTarget "GigyaExampleTests" */;
+			buildPhases = (
+				D302B31015ED348600E2133D /* Sources */,
+				D302B31115ED348600E2133D /* Frameworks */,
+				D302B31215ED348600E2133D /* Resources */,
+				D302B31315ED348600E2133D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D302B31B15ED348700E2133D /* PBXTargetDependency */,
+			);
+			name = GigyaExampleTests;
+			productName = GigyaExampleTests;
+			productReference = D302B31515ED348600E2133D /* GigyaExampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D302B2E815ED348600E2133D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GigyaExample;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Brian Fagan";
+			};
+			buildConfigurationList = D302B2EB15ED348600E2133D /* Build configuration list for PBXProject "GigyaExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D302B2E615ED348600E2133D;
+			productRefGroup = D302B2F215ED348600E2133D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D302B2F015ED348600E2133D /* GigyaExample */,
+				D302B31415ED348600E2133D /* GigyaExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D302B2EF15ED348600E2133D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D302B30015ED348600E2133D /* InfoPlist.strings in Resources */,
+				D302B30915ED348600E2133D /* MainStoryboard.storyboard in Resources */,
+				D3E25A81166D39F500490FFB /* GSFBDialog.bundle in Resources */,
+				D3E25A8B166D39F500490FFB /* GSWebViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D302B31215ED348600E2133D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D302B32115ED348700E2133D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D302B31315ED348600E2133D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D302B2ED15ED348600E2133D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D302B30215ED348600E2133D /* main.m in Sources */,
+				D302B30615ED348600E2133D /* GigyaExampleAppDelegate.m in Sources */,
+				D302B30F15ED348600E2133D /* GigyaExampleViewController.m in Sources */,
+				D3E25A7D166D39F500490FFB /* GSAPI.m in Sources */,
+				D3E25A7E166D39F500490FFB /* GSAPI_Internal.m in Sources */,
+				D3E25A7F166D39F500490FFB /* GSContext.m in Sources */,
+				D3E25A80166D39F500490FFB /* GSFacebook.m in Sources */,
+				D3E25A82166D39F500490FFB /* GSFBDialog.m in Sources */,
+				D3E25A83166D39F500490FFB /* GSFBLoginDialog.m in Sources */,
+				D3E25A84166D39F500490FFB /* GSFBRequest.m in Sources */,
+				D3E25A85166D39F500490FFB /* GSLogger.m in Sources */,
+				D3E25A86166D39F500490FFB /* GSObject.m in Sources */,
+				D3E25A87166D39F500490FFB /* GSRequest.m in Sources */,
+				D3E25A88166D39F500490FFB /* GSResponse.m in Sources */,
+				D3E25A89166D39F500490FFB /* GSSession.m in Sources */,
+				D3E25A8A166D39F500490FFB /* GSWebViewController.m in Sources */,
+				D3E25A8C166D39F500490FFB /* NSObject+SBJSON.m in Sources */,
+				D3E25A8D166D39F500490FFB /* NSString+SBJSON.m in Sources */,
+				D3E25A8E166D39F500490FFB /* SBJSON.m in Sources */,
+				D3E25A8F166D39F500490FFB /* SBJsonBase.m in Sources */,
+				D3E25A90166D39F500490FFB /* SBJsonParser.m in Sources */,
+				D3E25A91166D39F500490FFB /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D302B31015ED348600E2133D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D302B32415ED348700E2133D /* GigyaExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D302B31B15ED348700E2133D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D302B2F015ED348600E2133D /* GigyaExample */;
+			targetProxy = D302B31A15ED348700E2133D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D302B2FE15ED348600E2133D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D302B2FF15ED348600E2133D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D302B30715ED348600E2133D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D302B30815ED348600E2133D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		D302B31F15ED348700E2133D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D302B32015ED348700E2133D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D302B32515ED348700E2133D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos5.1;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D302B32615ED348700E2133D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos5.1;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D302B32815ED348700E2133D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GigyaExample/GigyaExample-Prefix.pch";
+				INFOPLIST_FILE = "GigyaExample/GigyaExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos5.1;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D302B32915ED348700E2133D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GigyaExample/GigyaExample-Prefix.pch";
+				INFOPLIST_FILE = "GigyaExample/GigyaExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos5.1;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D302B32B15ED348700E2133D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GigyaExample.app/GigyaExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GigyaExample/GigyaExample-Prefix.pch";
+				INFOPLIST_FILE = "GigyaExampleTests/GigyaExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D302B32C15ED348700E2133D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GigyaExample.app/GigyaExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GigyaExample/GigyaExample-Prefix.pch";
+				INFOPLIST_FILE = "GigyaExampleTests/GigyaExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D302B2EB15ED348600E2133D /* Build configuration list for PBXProject "GigyaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D302B32515ED348700E2133D /* Debug */,
+				D302B32615ED348700E2133D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D302B32715ED348700E2133D /* Build configuration list for PBXNativeTarget "GigyaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D302B32815ED348700E2133D /* Debug */,
+				D302B32915ED348700E2133D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D302B32A15ED348700E2133D /* Build configuration list for PBXNativeTarget "GigyaExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D302B32B15ED348700E2133D /* Debug */,
+				D302B32C15ED348700E2133D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D302B2E815ED348600E2133D /* Project object */;
+}
