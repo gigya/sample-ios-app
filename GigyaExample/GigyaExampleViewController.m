@@ -17,7 +17,7 @@
 @synthesize gsAPI;
 
 //***Replace this with your API key, which can be located in the Gigya dashboard at http://platform.gigya.com
-static NSString *apiKey = @"3_NrUw306FZey-o0rZGq9tm6afgS1CE6wR3WPX-BjRaNzJylmlJ1z-i7hzF4zX-mMV";
+static NSString *apiKey = @"2_Y82PzwJ_chSFImHXaIDJClnLyJzmk-VFOavSsaNTzl6m901s_NNxRAS0xJ3bd3_N";
 
 - (void)viewDidLoad
 {
